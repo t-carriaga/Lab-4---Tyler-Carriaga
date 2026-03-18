@@ -1,8 +1,46 @@
-.map {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
+/* Make map fill screen */
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Floating panel styling */
+#ui-panel {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  z-index: 999; /* ensures panel is above the map */
+  max-width: 220px;
+}
+
+/* Legend box styling */
+.legend {
+  margin-top: 10px;
+}
+
+.legend .box {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  border: 1px solid #000;
+}
+
+/* Controls styling */
+.controls {
+  margin-top: 10px;
+}
+
+.controls label {
+  font-size: 13px;
 }
