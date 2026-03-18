@@ -1,6 +1,12 @@
-# GGR472 Lab 4: Incorporating GIS analysis into web maps using Turf.js
+# Lab Overview
  
-This repository contains the starter code required to complete Lab 4. The lab is designed to help you learn how to perform spatial analysis and visualize outputs using the [Turf.js](https://turfjs.org/) and [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/api/) libraries.
+This project visualizes pedestrian and cyclist collisions in Toronto using Mapbox GL JS and Turf.js. Collision data is aggregated into hexagonal bins to help identify areas with higher concentrations of crashes. The interactive web map allows users to:
+
+Clicl over hexagons to see the total number of crashes in that area.
+
+Toggle visibility of raw crash points and the hexgrid.
+
+Zoom and pan across the city to explore collision patterns.
 
 
 ## Repository Contents
@@ -10,14 +16,4 @@ This repository contains the starter code required to complete Lab 4. The lab is
 - `style.css`: CSS file for positioning the map interface
 - `script.js`: JavaScript file template to be updated to include code that creates and visualizes and hexgrid map based on the collision data
    
-
-## Getting started
-
-To get started with the lab:
-
-1. Download this repository to your local machine
-2. Update the public access token and basemap in `script.js`
-3. Open `index.html` in a web browser to view the map
-4. Create a new online repository containing your own files
-2. Work through the `instructions/GGR472_Lab4` instructions document to incrementally develop the `script.js` file
 
